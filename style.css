@@ -1,0 +1,81 @@
+/* Empêche tout scroll */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Centre le contenu */
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.bigger {
+    font-size: 5rem;
+}
+
+.lesser {
+    font-size: 2rem;
+}
+
+.stronk {
+    font-size: 12rem;
+}
+
+.mini {
+    font-size: 1rem;
+}
+
+.fancy_body{
+    background: linear-gradient(45deg, red, yellow, lime, cyan, blue, magenta, red);
+    background-size: 400% 400%;
+    animation: psychedelicBackground 5s linear infinite;
+}
+
+@keyframes psychedelicBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.fancy{
+    color: #fff;
+    text-shadow:
+            0 0 10px #fff,
+            0 0 20px #f0f,
+            0 0 30px #0ff,
+            0 0 40px #ff0,
+            0 0 50px #f00,
+            0 0 60px #0f0;
+    animation: shake 0.15s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    25% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-2px, 2px) rotate(-1deg); }
+    75% { transform: translate(2px, 2px) rotate(1deg); }
+    100% { transform: translate(-2px, -2px) rotate(-1deg); }
+}
+
+.secret_link,
+.secret_link:visited,
+.secret_link:active,
+.secret_link:focus {
+    color: #00bfff; /* Bleu azur */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.secret_link:hover {
+    color: #66d9ff; /* Un peu plus clair au survol */
+}

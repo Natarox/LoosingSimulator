@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaaaay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            background: linear-gradient(135deg, #1a0033, #330066, #ff00cc);
+            background-size: 300% 300%;
+            animation: backgroundFlow 15s ease infinite;
+            color: #ff00ff;
+        }
+
+        @keyframes backgroundFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 0 50px;
+            box-sizing: border-box;
+        }
+
+        .gif {
+            width: 300px;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+
+        .gif.mirrored {
+            transform: scaleX(-1);
+        }
+
+        .text {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .big{
+            font-size: 4rem;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .less{
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- GIF original -->
+    <img src="cat_dance.gif" alt="GIF gauche" class="gif">
+
+    <!-- Texte central -->
+    <div class="text">
+        <span class="big">Ouaiiiiiis, t'y es enfin !!<br>... Et tout ça pour rien<br><br></span>
+        <span class="less">En gros, ce qui c'est passé, c'est que le livreur a réussi l'explois de paumer mon colis (je vais me barba foutre en l'air) parce que tu connais ma chance avec les commandes internet.<br>
+        Donnnnc, après avoir bien expliqué au SAV, ils m'en ont renvoyé un, mais le problème c'est que c'est pas un gros site.<br>
+            Donc les commandes prennent du temps.<br>
+            Beaucoup.<br>
+            Du couuuup, j'espère que tu apprécie au moins le temps que je t'ai fait perdre là, parce que il te reste encore quelques jours d'attente.<br>
+            Normalement il devrait arriver au maximum le 26 juin.<br><br>
+            Voala, désolé du dérangement, je suis un peu grognon mais je te souhaite un très bon anniversaire quand même !
+        </span>
+    </div>
+
+    <!-- GIF en miroir -->
+    <img src="cat_dance.gif" alt="GIF droit miroir" class="gif mirrored">
+</div>
+</body>
+</html>
